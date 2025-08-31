@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice with Tables</title>
+</head>
+
+<style>
+  table {
+    margin: auto;
+    border: none;
+    width: 200px;
+    border-spacing: 2px;
+    border: #eaeaea;
+  }
+
+  table, td, th {
+    border-style: none;
+  }
+
+  caption {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  thead {
+    background-color: #eaeaea;
+  }
+
+  tbody, td {
+    padding-left: 25px;
+    border-bottom: 1px #000033 dashed;
+  }
+
+  tfoot {
+    background-color: #eaeaea;
+    font-weight: bold ;
+    text-align: center;
+  }
+
+</style>
+
+
+<body>
+  <table border="1">
+    <caption> Time Sheet </caption>
+
+    <thead>
+      <tr>
+        <th id ="day">Day</th>
+        <th id = "hours">Hours</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td headers="day">Monday</td>
+        <td headers="hours">4</td>
+      </tr>
+
+      <tr>
+        <td headers="day">Tuesday</td>
+        <td headers="hours">5</td>
+      </tr>
+
+      <tr>
+        <td headers="day">Wednesday</td>
+        <td headers="hours">6</td>
+      </tr>
+
+      <tr>
+        <td headers="day">Thursday</td>
+        <td headers="hours">7</td>
+      </tr>
+
+      <tr>
+        <td headers="day">Friday</td>
+        <td headers="hours">8</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th headers="day">Total</th>
+        <th headers="hours">30</th>
+      </tr>
+
+  </table>
+</body>
+</html>

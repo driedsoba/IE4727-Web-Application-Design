@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice with Tables</title>
+</head>
+
+<style>
+  table {
+    margin: auto;
+    border: 5px solid #000066;
+    width: 600px;
+    border-spacing: 0;
+  }
+
+  td, th {
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    border-style: none;
+  }
+
+  caption {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+  }
+
+  tr:nth-of-type(even) {
+    background-color: #eaeaea;
+  }
+
+  thead:first-of-type {
+    background-color: #000066;
+    color: #eaeaea;
+  }
+</style>
+
+
+<body>
+  <table border="1">
+    <caption> Lighthouse Island Bistro Specialty Coffee <Menu></Menu> </caption>
+
+    <thead>
+      <tr>
+        <th id ="specialty">Specialty Coffee</th>
+        <th id = "description">Description</th>
+        <th id = "price">Price</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td headers="specialty">Lite Latte</td>
+        <td headers="description">Rich and bold coffee blend</td>
+        <td headers="price">$4.50</td>
+      </tr>
+      <tr>
+        <td headers="specialty">Cappuccino</td>
+        <td headers="description">Smooth and creamy with a dusting of cocoa</td>
+        <td headers="price">$5.00</td>
+      </tr>
+      <tr>
+        <td headers="specialty">Mocha</td>
+        <td headers="description">Espresso with steamed milk and chocolate</td>
+        <td headers="price">$5.50</td>
+    </tbody>
+
+  </table>
+</body>
+</html>
