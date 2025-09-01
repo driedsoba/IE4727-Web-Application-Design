@@ -125,6 +125,50 @@ nav a.current {
   pointer-events: none;
 }
 
+/* Jobs form layout */
+.job-form {
+  max-width: 680px;
+  margin: 10px 0 20px 0;
+}
+
+.job-form .form-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  /* label column + field column */
+  align-items: top;
+  gap: 10px 14px;
+  /* row gap, col gap */
+  margin-bottom: 12px;
+}
+
+.job-form .form-label {
+  justify-self: end;
+  /* right-align labels */
+  text-align: right;
+}
+
+.job-form .form-field input[type="text"],
+.job-form .form-field input[type="email"],
+.job-form .form-field input[type="date"],
+.job-form .form-field textarea {
+  width: 280px;
+  /* ensures input on same line with label */
+  max-width: 100%;
+  padding: 6px 8px;
+  /* a few pixels away from title via grid gap */
+  border: 1px solid #a98a68;
+  background-color: #fff;
+}
+
+.job-form .form-field textarea {
+  height: 90px;
+}
+
+.job-form .form-actions input[type="reset"]:hover,
+.job-form .form-actions input[type="submit"]:hover {
+  background-color: #d6c4a8;
+}
+
 /* Menu page table styling */
 .menu-table {
   width: 100%;
@@ -134,7 +178,8 @@ nav a.current {
 }
 
 .menu-table td {
-  vertical-align: middle; /* center content vertically within the row */
+  vertical-align: middle;
+  /* center content vertically within the row */
   padding: 14px 16px;
 }
 
@@ -148,7 +193,8 @@ nav a.current {
 
 .menu-table .desc {
   background-color: #dbc19f;
-  border-left: 4px solid #f5f5dc; /* white divider between columns */
+  border-left: 4px solid #f5f5dc;
+  /* white divider between columns */
 }
 
 .menu-table .price {
@@ -165,7 +211,7 @@ nav a.current {
 }
 
 /* White divider between item and description cells */
-.menu-table td + td {
+.menu-table td+td {
   border-left: 4px solid #ffffff;
 }
 
