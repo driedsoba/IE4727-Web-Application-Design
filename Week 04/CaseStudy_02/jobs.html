@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+  <title>JavaJam Coffee House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    label {
+      align-items: right;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>JavaJam Coffee House</h1>
+    </header>
+
+  <div id="leftcolumn">
+      <nav>
+        <ul>
+      <li><a href="index.html">Home</a></li>
+  <li><a href="menu.html" class="current">Menu</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="rightcolumn">
+      <div class="content">
+        <h2>Jobs at JavaJam</h2>
+
+        <p>
+          Want to work at JavaJam? Fill out the form below to start your application. Required fields are <br> marked with an asterisk *
+        </p>
+
+        <form action="show_post.php" method="post"> 
+          <label>*Name: <input type="text" name="CustName"  id="CustName" size=30 required placeholder = "Enter your name here"></label><br ><br>
+          <label>*E-mail: <input type="email" name="CustEmail"  id="CustEmail" required placeholder = "Enter your email ID here"></labeL><br ><br>
+          <label>Start date: <input type="date" name="startdate" id="startdate" required></label><br ><br>
+          <label>*Experience: <input type=""comments" name="comments" id="comments" rows="4" cols="50" placeholder="Enter your experience here"></input></label><br ><br>
+          <input type="reset" value="Clear"> <br><br>
+          <input type="submit" value="Apply Now" > 
+       </form>
+      </div>
+    </div>
+
+    <footer>
+      Copyright &copy; 2014 JavaJam Coffee House
+      <br />
+      <a href="mailto:junle@liw.com">junle@liw.com</a>
+    </footer>
+  </div>
+</body>
+</html>
