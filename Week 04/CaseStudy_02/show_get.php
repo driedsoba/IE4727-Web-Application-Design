@@ -1,3 +1,6 @@
 <?php
-  var_dump($_GET);
+  $name = $_POST['CustName'];
+  $email = $_POST['CustEmail'];
+  $startdate = $_POST['startdate'];
+  $comments = $_POST['comments'];
 ?>
