@@ -38,3 +38,10 @@
 - All nodes in tree can be accessed by .js
 - Root object in .js is *Object*
 - An **Object** has *property* and *method*
+- Js model for HTML document is the **Document** object, which has method *write* dynamically creating content
+- Browser display window is **Window** object, two properties *document* and *window*
+
+
+### Window Object
+- Three methods for dialog boxes: 'alert', 'confirm', 'prompt'
+-  

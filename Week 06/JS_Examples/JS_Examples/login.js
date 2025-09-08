@@ -14,7 +14,7 @@ function validateForm() {
         return true;
     } else {
         alert('Please complete the form!');
-        return false;
+        return false;                                                                                                                                                                                                                                                                     
     }
     
 } // End of validateForm() function.
