@@ -43,5 +43,41 @@
 
 
 ### Window Object
-- Three methods for dialog boxes: 'alert', 'confirm', 'prompt'
--  
+- Three methods for creating dialog boxes: 'alert', 'confirm', 'prompt'
+
+
+### Control Statements
+- Three types of Control expressions: Primitive, Relational, Compound
+- P: if string true unless empty or "0". R: ==, !=, <, >, <=, >=, C: &&, ||, !
+- Switch statements containing control expressions
+
+
+### Functions as Constructors
+```javascript
+function plane(newMake, newModel) {
+    this.make = newMake;
+    this.model = newModel;
+}
+// Usage
+myPlane = new plane("Cessna", "Centurion");
+
+// Object Creation
+var myObject = new Object();
+
+// Adding Properties
+myObject.make = "example property";
+
+// Access Property
+var property1 = myObject["make"];
+
+// Js Core Objects
+var now = new Date();
+var now1 = new Array();
+var sum = new Function(arguments, statements;)
+```
+
+### Regex
+- Two ways, 1. RegExp Objects 2. Using method on String objects (Search(), match(), replace(), split())
+- Two categories of characters: \ | ( ) [ ] { } ^ $ * + ? .
+- **period is a special metacharacter** - it matches any character except
+newline
