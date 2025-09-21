@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!--form elements text, password, checkbox, radio, textarea, select, option, submit button, reset button, calendar, time-->
+  <form action="/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="checkbox">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+    <label for="radio">Select your preferred contact method:</label>
+      <input type="radio" id="email" name="contact" value="email" checked>
+      <label for="email">Email</label>
+
+      <input type="radio" id="phone" name="contact" value="phone">
+      <label for="phone">Phone</label> <br><br>
+
+    <label for="testing">Comments:</label>
+    <textarea id="testing" name="comments" rows="4" cols="50"></textarea> <br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+    </select> <br><br>
+
+    <label for="appt">Choose a time for your appointment:</label>
+    <input type="time" id="appt" name="appt" required> <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"> <br><br>
+    <calendar>
+      <label for="start">Start date:</label>
+      <input type="date" id="start"
+             value="2024-07-22"
+             min="2024-01-01" max="2024-12-30">
+      <br><br>
+    </calendar>
+  </form>
+
+</body>
+</html>

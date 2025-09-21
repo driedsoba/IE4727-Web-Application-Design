@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* background image tile */
+    body {
+      background-image: url('background-tile.jpg');
+      background-repeat: repeat;
+      /* for multiple background images */
+      background: url('background1.jpg'), 
+                  url('background2.png') no-repeat;
+    }
+    /* formatting font style and text */
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: green;
+      text-align: center;
+    }
+    /* styles for hyperlinks
+       link - default state
+       visited - after hyperlink has been visited
+       hover - triggered when mouse is over hyperlink
+       active - triggered when hyperlink is clicked
+       focus - triggered when hyperlink has focus (e.g., tabbed to it)
+    */
+
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      color: red;
+    }
+    a:active {
+      color: orange;
+    }
+    a:focus {
+      outline: 2px solid blue;
+    }
+
+    /* background style */
+    /* attributes: color, image, position, repeat, size */
+    div {
+      background-color: lightgray;
+      background-image: url('background.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+<body>
+  <!--Image Links-->
+  <a href="https://www.example.com">
+    <img src="image.jpg" alt="Example Image" style="width:100px;height:100px;">
+  </a>
+
+</body>
+</html>

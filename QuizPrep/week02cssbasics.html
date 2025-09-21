@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Link to external style sheets, applied to web-site -->
+  <link rel="stylesheet" href="week02cssbasics.css">
+  <!-- Embedded style, applied to web page-->
+  <style>
+    /* Tag Selector */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f0f0f0;
+    }
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    /* ID Selector */
+    #unique {
+      border: 2px solid red;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Inline Style applied to element-level-->
+  <h1 style="color: blue;">Welcome to My Website</h1>
+  <p style="font-size: 18px;">This is a sample paragraph with inline styles.</p>
+  <p class="highlight">This paragraph is highlighted using a class selector.</p>
+  <div id="unique">This div has a unique style using an ID selector.</div>
+
+  <!--Position Properties-->
+  <h2>Positioning Example</h2>
+  <div style="position: relative; width: 200px; height: 200px; background-color: lightblue;">
+    Relatively Positioned Box
+  </div>
+    
+  <div style="position: absolute; top: 50px; left: 50px; width: 100px; height: 100px; background-color: coral;">
+      Absolutely Positioned Box
+  </div>
+
+</body>
+</html>
