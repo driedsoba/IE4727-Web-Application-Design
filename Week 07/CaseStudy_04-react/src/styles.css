@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Minimal helpers not covered by Bootstrap utilities */
+
+/* Keep a small read-only input appearance for subtotals */
+.form-readonly {
+  background-color: #f8f9fa;
+}
+
+/* Stack shot radio options vertically in MenuItem */
+.shot-options {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: #0b0f12;
+  /* page background dark */
+  color: #ffffff;
+}
+
+.app-header h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #ffffff;
+}
+
+.feature-img {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border-radius: .25rem;
+}
+
+.feature-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 576px) {
+
+  /* on narrow screens use full width and auto height */
+  .feature-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.nav-link {
+  padding: .25rem .75rem;
+  color: #e6eaee;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: transparent;
+  color: #e03131;
+  font-weight: 600;
+}
+
+/* Header / nav panel styling to make header distinct */
+.site-header {
+  /* Riot-style: dark panel with red accents */
+  background: #0f1316;
+  /* almost-black */
+  color: #ffffff;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 8px;
+  z-index: 50;
+}
+
+.site-header .utility-row {
+  font-size: .9rem;
+  color: #d1d5d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  padding-top: 1.25rem;
+  color: #e6eaee;
+}
+
+/* Make containers transparent so the dark background shows through */
+.container {
+  background: transparent;
+}
+
+/* Ensure lists and paragraphs have readable contrast */
+p,
+li,
+address {
+  color: #e6eaee;
+}
+
+/* Subtle border for the image to stand out on dark background */
+.feature-img {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+  border-radius: .25rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+/* Hover/interactive effect for images: lift, subtle scale, brighten */
+.feature-img:hover,
+.card-img-top:hover,
+img.interactive:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.06) saturate(1.03);
+}
+
+/* Add a modest focus outline for keyboard users */
+.feature-img:focus,
+.card-img-top:focus,
+img.interactive:focus {
+  outline: 3px solid rgba(224, 49, 49, 0.14);
+  outline-offset: 4px;
+}
+
+/* Menu card and thumbnail styles */
+.menu-card {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  /* ensure horizontal layout */
+  align-items: center;
+  /* vertical center children */
+}
+
+/* The thumbnail sits inside the card; give it matching left-edge rounding and consistent padding */
+.menu-thumb {
+  width: 160px;
+  background: #caa481;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  overflow: hidden;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Stronger visual style keep same rounding to match card */
+.menu-thumb.justjava {
+  background: linear-gradient(135deg, #a57a55, #caa481);
+}
+
+.menu-thumb strong {
+  color: #0b0f12;
+}
+
+/* Center the inner menu content vertically so price/radio align with thumbnail */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 64px;
+}
+
+/* Input sizing helpers used in MenuItem */
+.input-qty {
+  width: 5rem;
+}
+
+.input-subtotal {
+  width: 7rem;
+  background: #f3efe8;
+}
+
+/* Slight padding for menu-card content */
+.menu-card>.flex-grow-1 {
+  padding-right: 1rem;
+}
+
+/* Reduce spacing inside menu content to help vertical alignment */
+.menu-content p {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.shot-options {
+  margin: 0;
+}
+
+.shot-options>div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* Primary buttons use Riot red */
+.btn-primary {
+  --bs-btn-bg: #e03131;
+  --bs-btn-border-color: #c62828;
+  background-color: #e03131;
+  border-color: #c62828;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #c62828;
+  border-color: #a71f1f;
+}

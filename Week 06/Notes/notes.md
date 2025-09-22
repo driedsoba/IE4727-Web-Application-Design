@@ -54,8 +54,6 @@ document.getElementsByTagName("input")
 document.getElementsByClassName("inputClass")
 ```
 
-
-
 ### Window Object
 - Three methods for creating dialog boxes: 'alert', 'confirm', 'prompt'
 
