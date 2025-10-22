@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Domain: 2-4 parts separated by ., last part 2-3 letters
     const emailRegex = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
     if (!emailRegex.test(email)) {
-      showError('CustEmail', 'Email must have username@domain. Domain needs 2-4 parts, last part 2-3 letters.');
+      showError(
+        'CustEmail',
+        'Email must have username@domain. Domain needs 2-4 parts, last part 2-3 letters.'
+      );
       isValid = false;
     }
 

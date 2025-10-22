@@ -4,11 +4,13 @@ body {
   background-color: #efe9b2;
   padding-top: 20px;
   /* Diagonal stripe pattern: 2px stripe + 6px gap at 135deg */
-  background-image: repeating-linear-gradient(135deg,
-      rgba(0, 0, 0, 0.05) 0,
-      rgba(0, 0, 0, 0.05) 2px,
-      rgba(0, 0, 0, 0) 2px,
-      rgba(0, 0, 0, 0) 8px);
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05) 0,
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0) 8px
+  );
 }
 
 #wrapper {
@@ -20,8 +22,7 @@ body {
   box-shadow:
     /* crisp layer */
     6px 6px 0 rgba(0, 0, 0, 0.08),
-    /* soft blurred layer */
-    16px 18px 28px 6px rgba(0, 0, 0, 0.26);
+    /* soft blurred layer */ 16px 18px 28px 6px rgba(0, 0, 0, 0.26);
 }
 
 #leftcolumn {
@@ -37,7 +38,7 @@ body {
 }
 
 #rightcolumn ul {
-  list-style-image: url(croissant.png);
+  list-style-image: url(../assets/croissant.png);
   list-style-position: inside;
   /* align marker with paragraph left edge */
   padding-left: 0;
@@ -50,13 +51,13 @@ header {
   font-size: 150%;
   text-align: center;
   text-shadow: #000000;
-  font-family: "Euclid Circular A";
+  font-family: 'Euclid Circular A';
   padding: 10px 10px 10px 155px;
 }
 
 h2 {
   color: #300002;
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 .content {
@@ -147,9 +148,9 @@ nav a.current {
   text-align: right;
 }
 
-.job-form .form-field input[type="text"],
-.job-form .form-field input[type="email"],
-.job-form .form-field input[type="date"],
+.job-form .form-field input[type='text'],
+.job-form .form-field input[type='email'],
+.job-form .form-field input[type='date'],
 .job-form .form-field textarea {
   width: 280px;
   /* ensures input on same line with label */
@@ -164,8 +165,8 @@ nav a.current {
   height: 90px;
 }
 
-.job-form .form-actions input[type="reset"]:hover,
-.job-form .form-actions input[type="submit"]:hover {
+.job-form .form-actions input[type='reset']:hover,
+.job-form .form-actions input[type='submit']:hover {
   background-color: #d6c4a8;
 }
 
@@ -211,7 +212,7 @@ nav a.current {
 }
 
 /* White divider between item and description cells */
-.menu-table td+td {
+.menu-table td + td {
   border-left: 4px solid #ffffff;
 }
 
@@ -252,8 +253,8 @@ nav a.current {
   /* left-align the radio labels */
 }
 
-.menu-table .order-controls input[type="number"],
-.menu-table .order-controls input[type="text"] {
+.menu-table .order-controls input[type='number'],
+.menu-table .order-controls input[type='text'] {
   width: 90px;
   padding: 6px 8px;
   border: 1px solid #b89a76;
