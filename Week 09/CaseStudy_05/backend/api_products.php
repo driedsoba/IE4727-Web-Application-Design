@@ -34,17 +34,3 @@ try {
     $dbcnx->close();
 }
 ?>
-
-<!-- Returns JSON -->
-<!-- {
-  "success": true,
-  "products": [
-    {
-      "product_id": 1,
-      "product_name": "Just Java",
-      "price_single": 3.00,
-      "price_double": null,
-      "has_options": false
-    }
-  ]
-} -->

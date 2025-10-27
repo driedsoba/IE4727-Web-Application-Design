@@ -14,6 +14,9 @@ try {
     
     $items = $_POST['items'];
     $totalAmount = 0;
+    
+    // Set timezone to Singapore (UTC+8)
+    date_default_timezone_set('Asia/Singapore');
     $today = date('Y-m-d');
     $time = date('H:i:s');
     
@@ -29,7 +32,7 @@ try {
     $insert_query = "INSERT INTO sales (product_id, product_name, option_type, quantity, unit_price, total_amount, sale_date, sale_time) 
                      VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $dbcnx->prepare($insert_query);
-    
+
     foreach ($items as $item_json) {
         $item = json_decode($item_json, true);
         
@@ -47,9 +50,14 @@ try {
         
         $item_total = $unit_price * $quantity;
         $totalAmount += $item_total;
-        
+
+    // $insert_query = "INSERT INTO sales (product_name, quantity) 
+    //                 VALUES ('$product_name', $quantity)";   
+    // product_name = "Java, 1); DROP TABLE sales; --"
+    // VALUES ('Java, 1'); DROP TABLE sales;    
+    
         // Insert into database
-        $stmt->bind_param("issiddss", 
+        $stmt->bind_param(s"isiddss", 
             $product_id, 
             $product_name, 
             $option, 

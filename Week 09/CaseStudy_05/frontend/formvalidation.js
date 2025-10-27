@@ -1,5 +1,4 @@
 // formvalidation.js - Custom validation for jobs.html form
-// Adds extra checks beyond basic HTML5 validation (e.g., required, type="email")
 // Prevents form submission if custom rules fail; shows error messages below fields
 
 document.addEventListener('DOMContentLoaded', function () {
